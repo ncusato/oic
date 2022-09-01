@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This workshop is to educate customers on how to invoke queries on Oracle Blockchain Platform (OBP) using an App Driven Integration on Oracle Integrator Cloud (OIC). One of the main methods of invoking the blockchain on OBP is through an API. This lab deploys a sample chaincode (BalanceTransfer) on OBP and using a REST Connection to interact with OBP. 
+This workshop is to educate customers on how to invoke queries on Oracle Blockchain Platform (OBP) using an App Driven Orchestration on Oracle Integrator Cloud (OIC). One of the main methods of invoking the blockchain on OBP is through an API. This lab deploys a sample chaincode (BalanceTransfer) on OBP and using a REST Connection to interact with OBP. 
 
 ![App Driven Orchestration Architecture](images/app-driven-architecture.png)
 
