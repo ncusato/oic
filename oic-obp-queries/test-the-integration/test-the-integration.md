@@ -1,9 +1,9 @@
-# Create OML model
+# Test the Integration
 
 ## Introduction
 
 In this lab, we will test the integration we created in the previous lab.
-Estimated Time: 15 minutes
+Estimated Time: 5 minutes
 
 
 ### Objectives
