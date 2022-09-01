@@ -2,7 +2,8 @@
 
 ## Introduction
 
-In this lab, we will test the integration we created in the previous lab.
+In this lab, we will test the integration we created in the previous lab. We will use OIC to run test queries to the OBP REST Endpoint.
+
 Estimated Time: 5 minutes
 
 
@@ -52,10 +53,8 @@ have used earlier into the text region. Select **Test** to verify.
 
     ![Response output for query](images/success-mapping.png) 
 
-
-
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, August 22, 2022
-- **Contributers**- Rodrigo Mendoza, Ethan Shmargad, Thea Lazarova
-- **Last Updated By/Date** - Nicholas Cusato, August 22, 2022
+- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, September 2022
+- **Contributers**- Jens Lusebrink, Christophe Peytier
+- **Last Updated By/Date** - Nicholas Cusato, September 1, 2022

@@ -11,6 +11,7 @@ Estimated Time: 20 minutes
 In this lab, you will complete the following tasks:
 
 - Login to OBP
+- Create Channel
 - Install sample chaincode
 - Test the chaincode
 
@@ -34,11 +35,13 @@ This lab assumes you have:
 
 ![Instance portal service consol button](images/instance-portal.png) 
 
-4. From the service console's menu bar, select **Channels.** Create a new channel by selecting the blue button that says **Create a New Channel.**
+## Task 2: Create Channel 
+
+1. From the service console's menu bar, select **Channels.** Create a new channel by selecting the blue button that says **Create a New Channel.**
 
 ![Select create new channel from channel page](images/new-channel.png) 
 
-5. Enter the following information:
+2. Enter the following information:
    
     ```
     Channel Name: balancetransfer
@@ -47,21 +50,25 @@ This lab assumes you have:
     ```
 Afterwards click on ‘Submit’ and a new channel will be created.
 
-![Select Channel properties to submit](images/channel-properties.png) 
+![Select Channel properties to submit](images/channel-properties.png) ]
 
-7. Select **Developer Tools** from the menu bar and then select **Samples.** Notice the Balance Transfer sample code and select **Install.**
+## Task 3: Install sample chaincode
+
+1. Select **Developer Tools** from the menu bar and then select **Samples.** Notice the Balance Transfer sample code and select **Install.**
 
 ![Access Sample Chaincode, balance transfer](images/install-balance-transfer.png) 
 
-8. Select the language **Node.js** and peer **peer0** that you had assigned in the previous step.
+2. Select the language **Node.js** and peer **peer0** that you had assigned in the previous step.
 
 ![balance transfer installation properties](images/install-bt-properties.png) 
 
-9. Select the channel you just created **balancetransfer** and initial parameters for A and B respectively, **100** and **200**.
+3. Select the channel you just created **balancetransfer** and initial parameters for A and B respectively, **100** and **200**.
 
 ![Deployment properties](images/deploy-chaincode-properties.png) 
 
-10. Select the channel you just created **balancetransfer** and leave everything else default. Select **Execute.**
+## Task 4: Test the chaincode
+
+1. Select the channel you just created **balancetransfer** and leave everything else default. Select **Execute.**
 
 ![Test the code by invoking a query](images/invoke-query.png) 
 
@@ -75,6 +82,6 @@ Afterwards click on ‘Submit’ and a new channel will be created.
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, August 22, 2022
+- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, September 2022
 - **Contributers**- Jens Lusebrink, Christophe Peytier
-- **Last Updated By/Date** - Nicholas Cusato, August 22, 2022
+- **Last Updated By/Date** - Nicholas Cusato, September 1, 2022

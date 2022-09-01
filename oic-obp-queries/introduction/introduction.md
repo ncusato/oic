@@ -33,6 +33,6 @@ This lab assumes you have:
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, August 22, 2022
+- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, September 2022
 - **Contributers**- Jens Lusebrink, Christophe Peytier
-- **Last Updated By/Date** - Nicholas Cusato, August 22, 2022
+- **Last Updated By/Date** - Nicholas Cusato, September 1, 2022

@@ -2,18 +2,26 @@
 
 ## Introduction
 
-In this lab, we will create an integration in OIC drive this REST connection to OBP. 
-Estimated Time: 15 minutes
+In this lab, we will create an integration in OIC drive this REST connection to OBP. We will declare JSON payloads to enable mapping between integration points.
 
+Estimated Time: 15 minutes
 
 ### Objectives
 
 In this lab, you will complete the following tasks:
 
-- Verify Database Connection
-- Oracle AutoML experiment
-- Explore AutoML Model Results
-- Select a Machine Learning Mode
+- Search App Driven Orchestration
+- Create Sample REST Endpoint
+- Declare JSON payload for REST
+- Declare response JSON payload for REST
+- Create OBP Balance Transfer Invocation
+- Declare JSON payload for OBP
+- Declare response JSON payload for OBP
+- Map to Invocation from Sample REST Endpoint
+- Map to Invocation from OBP Balance Transfer Endpoint
+- Add Tracking
+- Activate Integration
+  
 
 ### Prerequisites
 
@@ -46,6 +54,8 @@ This lab assumes you have:
 
     ![Integration Properties options](images/integration-properties.png) 
 
+## Task 2: Create Sample REST Endpoint
+
 7. Select the **Sample REST Endpoint** Trigger to configure the endpoint.
    
     ![Integration pipeline starting endpoint](images/begin-integration.png) 
@@ -71,6 +81,8 @@ This lab assumes you have:
    
     ![Integration pipeline starting endpoint](images/resource-configuration.png) 
 
+## Task 3: Declare JSON Payload for REST
+
 10. Select **JSON Sample** for the request payload format and then, click **inline** to enter sample JSON. 
 
     ![Configure REST endpoint JSON](images/configure-rest-endpoint.png) 
@@ -92,6 +104,8 @@ This lab assumes you have:
 12. Select **JSON** for the media type to receive and then select **Next.** 
 
     ![Next Request option screen](images/next-json-format.png) 
+
+## Task 4: Declare Response JSON for REST
 
 13. Select **JSON Sample** for the request payload format and then, click **inline** to enter sample JSON. 
 
@@ -123,11 +137,13 @@ This lab assumes you have:
 
     ![Summary of configuration](images/endpoint-summary.png) 
 
-17. Hover the mouse over the line connecting the Invocation to Map to Invocation. Click the **Plus sign** that appears and select the **OBPBalanceTransfer.
+## Task 5: Create OBP Balance Transfer Invocation
+
+1. Hover the mouse over the line connecting the Invocation to Map to Invocation. Click the **Plus sign** that appears and select the **OBPBalanceTransfer.
 
     ![Integration mapping page with additional invocation](images/add-invocation.png) 
 
-18. Fill out the following on the basic information page:
+2. Fill out the following on the basic information page:
     
     ```
     What do you want to call your endpoint: InvocationToBlockchain
@@ -146,11 +162,13 @@ This lab assumes you have:
 
     Select **Next** to proceed to next step.
 
-19. Select **JSON Sample** for the request payload format and then, click **inline** to enter sample JSON. 
+## Task 6: Declare JSON payload for OBP
+
+1. Select **JSON Sample** for the request payload format and then, click **inline** to enter sample JSON. 
 
     ![Configure invocation request](images/invocation-request.png)
 
-20. Copy and paste the following jason payload for the actual values:
+2. Copy and paste the following jason payload for the actual values:
 
     ```
     <copy>
@@ -168,7 +186,9 @@ This lab assumes you have:
 
     ![JSON payload input](images/json-request.png) 
 
-21. Select **Next** to proceed to response payload.
+## Task 7: Declare response JSON payload for OBP
+
+1. Select **Next** to proceed to response payload.
 
    ![Next JSON request](images/next-json-request.png) 
 
@@ -198,11 +218,13 @@ This lab assumes you have:
 
    ![Invocation Summary](images/invocation-summary.png) 
 
-24. In order to create a mapping between REST endpoints, click the top (or left - if horizontal) **Map to Invocation** and select the **pencil icon**  
+## Task 8: Map to Invocation from Sample REST Endpoint
+
+1. In order to create a mapping between REST endpoints, click the top (or left - if horizontal) **Map to Invocation** and select the **pencil icon**  
 
    ![Pipeline mapping option](images/pipeline-mapping.png) 
 
-25. On the mapping page, select the **drop-down arrows** of each request wrappers and draw a line from each of the mappings:
+2. On the mapping page, select the **drop-down arrows** of each request wrappers and draw a line from each of the mappings:
 
     ```
     -Channel
@@ -216,11 +238,13 @@ This lab assumes you have:
 
 Select **Validate** and then **Close** to proceed.
 
-26. Select the bottom **Map to invocation** and click the **pencil icon.**
+## Task 9: Map to Invocation from OBP Balance Transfer Endpoint
+
+1. Select the bottom **Map to invocation** and click the **pencil icon.**
 
    ![Mapping from source to target](images/map-to-invocation.png)
 
-27. On the mapping page, similar to before, select the **drop-down arrows** of each request wrappers (Instead, this time for the first REST option in source) and draw a line from each of the mappings:
+2. On the mapping page, similar to before, select the **drop-down arrows** of each request wrappers (Instead, this time for the first REST option in source) and draw a line from each of the mappings:
 
     ```
     -returnCode
@@ -234,28 +258,32 @@ Select **Validate** and then **Close** to proceed.
 
 Select **Validate** and then **Close** to proceed.
 
-28. On the pipeline page, select the hamburger menu at the top right and click **Tracking.**
+## Task 10: Add Tracking
+
+1. On the pipeline page, select the hamburger menu at the top right and click **Tracking.**
 
    ![Hamburger menu tracking option](images/tracking-menu.png) 
 
-29. Drag **Channel** from the left side onto the blank field on the first line.
+2. Drag **Channel** from the left side onto the blank field on the first line.
 
    ![Mapping from source to target](images/channel-tracking.png) 
 
-30. On the integration page, select **Save** and **Close** 
+3. On the integration page, select **Save** and **Close** 
 
    ![Mapping from source to target](images/save-integration.png) 
 
-31. Click on the **Pushbutton** icon to activate the integration. 
+## Task 11: Activate Integration
+
+1. Click on the **Pushbutton** icon to activate the integration. 
 
    ![Pushbutton for activation](images/push-button.png)
 
-32. Select **Enable Asserter Recording,** **Enable tracing,** and **include payload** plus **Activate** to proceed. Wait for confirmation, when the status changes to active you are ready to proceed to next lab.
+2. Select **Enable Asserter Recording,** **Enable tracing,** and **include payload** plus **Activate** to proceed. Wait for confirmation, when the status changes to active you are ready to proceed to next lab.
 
    ![Activate integration](images/enable-tracing.png)
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, August 22, 2022
+- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, September 2022
 - **Contributers**- Jens Lusebrink, Christophe Peytier
-- **Last Updated By/Date** - Nicholas Cusato, August 22, 2022
+- **Last Updated By/Date** - Nicholas Cusato, September 1, 2022

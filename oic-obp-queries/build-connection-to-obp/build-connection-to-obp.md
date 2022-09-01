@@ -50,7 +50,9 @@ This lab assumes you have:
 
 ![Menu options for connections](images/select-rest.png) 
 
-8. Fill out the connection details as such:
+## Task 2: Create REST adaptor
+
+1. Fill out the connection details as such:
     
     ```
     Name: OBPBalanceTransfer
@@ -63,7 +65,7 @@ This lab assumes you have:
 
 ![Form for connection details](images/connection-details.png) 
 
-9. Fill out the connection properties as such:
+2. Fill out the connection properties as such:
 
     ```
     Connection Type: REST API Base URL
@@ -82,18 +84,20 @@ The REST proxy URL is located in the **OBP Nodes** section.
 
 ![Location of OBP REST proxy url](images/rest-proxy-url.png)
 
-Select **Test** to ensure everything is correct.
+## Task 3: Test connection
 
-10. Select **Save** to move on to the next step.
+1. Select **Test** to ensure everything is correct.
+
+2. Select **Save** to move on to the next step.
 
 ![Successful connection test and save](images/connection-test.png) 
 
-11. Select *left arrow button** to exit the connection screen.
+3. Select *left arrow button** to exit the connection screen.
 
 ![Left arrow button to exit](images/go-back-from-connection.png) 
 
 ## Acknowledgements
 
-- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, August 22, 2022
+- **Author**- Nicholas Cusato, Santa Monica Specialists Hub, September 2022
 - **Contributers**- Jens Lusebrink, Christophe Peytier
-- **Last Updated By/Date** - Nicholas Cusato, August 22, 2022
+- **Last Updated By/Date** - Nicholas Cusato, September 1, 2022
