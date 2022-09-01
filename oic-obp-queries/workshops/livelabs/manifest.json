@@ -1,0 +1,35 @@
+{
+    "workshoptitle": "LiveLabs",
+    "help": "livelabs-help-db_us@oracle.com",
+    "tutorials": [
+      {
+         "title": "Introduction",
+         "description": "",
+         "filename": "../../introduction/introduction.md"
+      },
+        {
+           "title": "Initialize OBP",
+           "description": "",
+           "filename": "../../initialize-obp/initialize-obp.md"
+        },
+        {
+           "title": "Build Connection to OBP",
+           "description": "",
+           "filename": "../../build-connection-to-obp/build-connection-to-obp.md"
+        },
+        {
+           "title": "Build Integration in OIC",
+           "description": "",
+           "filename": "../../build-integration-in-oic/build-integration-in-oic.md"
+        },
+        {
+           "title": "Test the Integration",
+           "description": "",
+           "filename": "../../test-the-integration/test-the-integration.md"
+        }
+
+    ],
+    "task_type": "Sections",
+    "hide_button": "true"
+ }
+ 
