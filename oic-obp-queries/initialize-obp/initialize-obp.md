@@ -19,7 +19,7 @@ In this lab, you will complete the following tasks:
 
 This lab assumes you have:
 - An Oracle Always Free/Free Tier, Paid or LiveLabs Cloud Account
-- Instance of OBP 
+- Created an OBP instance 
 
 ## Task 1: Login to OBP
 

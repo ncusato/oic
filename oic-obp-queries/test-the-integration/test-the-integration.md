@@ -17,6 +17,7 @@ In this lab, you will complete the following tasks:
 
 This lab assumes you have:
 - An Oracle Always Free/Free Tier, Paid or LiveLabs Cloud Account
+- Completed the previous labs
 
 ## Task 1: Test the integration
 
